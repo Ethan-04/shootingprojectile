@@ -1,3 +1,24 @@
+function projectile () {
+    projectile2 = sprites.createProjectileFromSprite(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 1 1 1 1 1 1 1 1 . . . . 
+. . . 1 1 9 9 9 9 9 9 1 1 . . . 
+. . . 1 9 9 9 9 9 9 9 9 1 . . . 
+. . . 1 9 9 1 9 1 9 9 9 1 . . . 
+. . . 1 9 9 9 1 9 9 9 9 1 . . . 
+. . . 1 9 9 1 9 1 9 9 9 1 . . . 
+. . . 1 9 9 9 9 9 1 9 9 1 . . . 
+. . . 1 1 9 9 9 9 9 9 1 1 . . . 
+. . . . 1 1 1 1 1 1 1 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, playerawesome, 50, 100)
+    projectile2.setPosition(0, Math.randomRange(0, 100))
+}
 function player () {
     playerawesome = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -36,29 +57,8 @@ function player () {
     playerawesome.setPosition(78, 101)
     controller.moveSprite(playerawesome, 100, 100)
 }
-function projectile () {
-    projectile2 = sprites.createProjectileFromSprite(img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . 1 1 1 1 1 1 1 1 . . . . 
-. . . 1 1 9 9 9 9 9 9 1 1 . . . 
-. . . 1 9 9 9 9 9 9 9 9 1 . . . 
-. . . 1 9 9 1 9 1 9 9 9 1 . . . 
-. . . 1 9 9 9 1 9 9 9 9 1 . . . 
-. . . 1 9 9 1 9 1 9 9 9 1 . . . 
-. . . 1 9 9 9 9 9 1 9 9 1 . . . 
-. . . 1 1 9 9 9 9 9 9 1 1 . . . 
-. . . . 1 1 1 1 1 1 1 1 . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, playerawesome, 50, 100)
-    projectile2.setPosition(0, Math.randomRange(0, 100))
-}
-let projectile2: Sprite = null
 let playerawesome: Sprite = null
+let projectile2: Sprite = null
 player()
 projectile()
 forever(function () {
