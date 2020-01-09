@@ -1,0 +1,51 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=".KGk)qao8d/TA3AMLd^R">Player</variable><variable type="KIND_SpriteKind" id="SO2t^lcWclTb8jG7*mc9">Projectile</variable><variable type="KIND_SpriteKind" id="Aiq|5xKmPlc*xbYydO$=">Food</variable><variable type="KIND_SpriteKind" id="qHYixQm1pP04WsiV_jPx">Enemy</variable><variable id="p@$x(`0{(m2tFa,;?k:m">player-awesome</variable><variable id="c77i$78q9u|b(TUkt**d">mySprite</variable><variable id="rbNC=Igs?UIP*j[N?~[+">projectile</variable></variables><block type="function_definition" x="310" y="-10"><mutation name="player" functionid="(I_9n+q[z]y=2VDKaS)G"/><field name="function_name"/><statement name="STACK"><block type="variables_set"><field name="VAR" id="p@$x(`0{(m2tFa,;?k:m">player-awesome</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . 5 . 5 . 5 . 5 . 5 . . . . . . . . . . . . . . 
+. . . . . . . . . . 5 5 5 5 5 5 5 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 5 5 5 5 5 5 5 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 8 8 1 1 1 8 8 . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d 8 d d 8 d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d d d d d . . . . . . . . . . . . . . . 
+. . . . . . . . . . . d d d d d . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . 1 1 1 1 1 . . . . . . . . . . . . . . . . 
+. . . . . . 4 4 4 8 4 4 4 4 4 4 4 8 4 4 4 . . . . . . . . . . . 
+. . . . . . 4 4 4 4 8 4 4 4 4 4 8 4 4 4 4 . . . . . . . . . . . 
+. . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
+. . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
+. . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
+. . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
+. . . . . . d d d 4 4 4 4 4 4 4 4 4 d d d . . . . . . . . . . . 
+. . . . . . d d d 4 4 4 4 4 4 4 4 4 d d d . . . . . . . . . . . 
+. . . . . . . . . . 8 8 8 8 8 8 8 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 4 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 4 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 . 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 . 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 . 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 . 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 4 4 4 . 4 4 4 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 8 8 8 . 8 8 8 . . . . . . . . . . . . . . . 
+. . . . . . . . . . 8 8 8 . 8 8 8 . . . . . . . . . . . . . . . 
+. . . . . . . . . . d d d . d d d . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="p@$x(`0{(m2tFa,;?k:m">player-awesome</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">78</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">101</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="p@$x(`0{(m2tFa,;?k:m">player-awesome</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></next></block></next></block></statement></block><block type="pxt-on-start" x="110" y="10"><statement name="HANDLER"><block type="function_call"><mutation name="player" functionid="(I_9n+q[z]y=2VDKaS)G"/><next><block type="function_call"><mutation name="projectile" functionid="atj;1qGD[)9ET_OX*xf]"/></block></next></block></statement></block><block type="forever" x="50" y="250"><statement name="HANDLER"><block type="function_call"><mutation name="projectile" functionid="atj;1qGD[)9ET_OX*xf]"/></block></statement></block><block type="function_definition" x="290" y="310"><mutation name="projectile" functionid="atj;1qGD[)9ET_OX*xf]"/><field name="function_name"/><statement name="STACK"><block type="variables_set"><field name="VAR" id="rbNC=Igs?UIP*j[N?~[+">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 1 1 1 1 1 1 1 1 . . . . 
+. . . 1 1 9 9 9 9 9 9 1 1 . . . 
+. . . 1 9 9 9 9 9 9 9 9 1 . . . 
+. . . 1 9 9 1 9 1 9 9 9 1 . . . 
+. . . 1 9 9 9 1 9 9 9 9 1 . . . 
+. . . 1 9 9 1 9 1 9 9 9 1 . . . 
+. . . 1 9 9 9 9 9 1 9 9 1 . . . 
+. . . 1 1 9 9 9 9 9 9 1 1 . . . 
+. . . . 1 1 1 1 1 1 1 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="sprite"><block type="variables_get"><field name="VAR" id="p@$x(`0{(m2tFa,;?k:m">player-awesome</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">100</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="rbNC=Igs?UIP*j[N?~[+">projectile</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></value></block></next></block></statement></block></xml>
